@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!--	
+ 	PureMVC Java Currency Converter for Android
+	Copyright (C) 2010  Frederic Saunier - www.tekool.net
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:padding="12dip"
+>
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/converter_spinner_from_label"
+    />
+
+    <Spinner
+    	android:id="@+id/ConverterSpinnerFrom"
+        android:layout_width="match_parent"
+        android:prompt="@string/converter_spinner_from_prompt"
+    	android:focusable="true" android:layout_height="48sp"/>
+ 
+	<EditText
+		android:id="@+id/ConverterInputFrom"
+    	android:layout_height="48sp"
+		android:layout_width="fill_parent"
+		android:inputType="numberDecimal"
+		android:text="0.00"
+		android:focusable="true"
+	></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/converter_spinner_to_label"
+        android:layout_marginTop="12sp"
+    />
+
+    <Spinner
+    	android:id="@+id/ConverterSpinnerTo"
+        android:layout_width="match_parent"
+    	android:layout_height="48sp"
+        android:prompt="@string/converter_spinner_to_prompt"
+    	android:focusable="true"
+    />
+    
+	<EditText
+		android:id="@+id/ConverterInputTo"
+		android:layout_height="48sp"
+		android:layout_width="fill_parent"
+		android:inputType="numberDecimal"
+		android:text="0.00"
+		android:focusable="true"
+	></EditText>
+	
+</LinearLayout>
